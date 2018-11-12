@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Георгий Асфур](https://up.htmlacademy.ru/htmlcss/23/user/564311).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
