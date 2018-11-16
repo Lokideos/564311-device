@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <meta name="keywords" content="device каталог селфи доставка контакты гарантия">
+    <meta name="keywords" content="device каталог селфи доставка контакты гарантия htmlacademy">
     <meta name="description" 
           content="Всегда мечтали делать селфи, как Бен Стиллер!? 
                    Не хватает аксессуаров!? Тогда вам к нам!!">
@@ -15,11 +15,15 @@
           <img src="img/device-logo.svg" alt="Device logo" class="logo">
         </a>
 
-        <span class="search-bar">Поиск по сайту</span>
+        <p>
+          <span class="search-bar">Поиск по сайту</span>
+        </p>
 
-        <a href="login">Войти</a>
-
-        <ul class="cart-actions">
+        <ul class="page-header-authorization">
+          <li><a href="login">Войти</a></li>
+        </ul>
+        
+        <ul class="page-header-cart-operations">          
           <li>
             <button type="button" class="compare-button">Сравнить</button>
           </li>
@@ -82,28 +86,31 @@
     </main>
 
     <footer class="page-footer">
-      <nav class="page-footer-navigation">
+      <div class="page-footer-top">
         <a class="footer-logo">
           <img src="img/device-footer-logo.svg" 
                alt="Device footer logo" 
                class="footer-logo">
         </a>
 
-        <ul class="page-footer-navigation-site-operations">
+        <ul class="page-footer-authorization">
           <li><a href="login.html">Войти</a></li>
+        </ul>
+
+        <ul class="page-footer-top-cart-operations">          
           <li>
             <button type="button" class="compare-button">Сравнить</button>
           </li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
-      </nav>
+      </div>
 
       <div class="page-footer-middle">
         <p class="page-footer-address">
           г. Москва, ул. Строителей, 15
         </p>
 
-        <ul class="page-footer-navigation-site-navigation">
+        <ul class="page-footer-site-navigation">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contactus.html">Контакты</a></li>
@@ -115,9 +122,9 @@
       </div>
 
       <div class="page-footer-bottom">
-        <ul>
+        <ul class="social-buttons">
           <li><a href="https://vk.com/" target="_blank" class="vk-social-button">VK</a></li>
-          <li><a href="https://www.facebook.com/" target="_blank" class="facebok-social-button">Facebook</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" class="facebook-social-button">Facebook</a></li>
           <li><a href="https://twitter.com/?lang=ru" target="_blank" class="twitter-social-button">Twitter</a></li>
         </ul>
 
