@@ -20,7 +20,10 @@
         </a>
 
         <p>
-          <span class="search-bar">Поиск по сайту</span>
+          <span class="search-bar"
+                aria-label="Строка поиска по сайту">
+            Поиск по сайту
+          </span>
         </p>
 
         <ul class="page-header-authorization">
@@ -31,9 +34,7 @@
         </ul>
         
         <ul class="page-header-cart-operations">
-          <li>
-            <button class="compare-button" type="button">Сравнить</button>
-          </li>
+          <li><a class="button" href="compare.html">Сравнить</a></li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
       </div>
@@ -44,7 +45,12 @@
             <a href="catalog.html">Каталог товаров</a>
             <ul class="catalog-menu-popup">              
               <li class="catalog-menu-popup-first-column"><a href="catalog/vr.html">Виртуальная реальность</a></li>
-              <li class="catalog-menu-popup-first-column"><a href="catalog/monopods.html">Моноподы для селфи</a></li>
+              <li class="catalog-menu-popup-first-column">
+                <a class="selected-goods-type" 
+                   href="catalog/monopods.html">
+                  Моноподы для селфи
+                 </a>
+              </li>
               <li class="catalog-menu-popup-first-column"><a href="catalog/action-cameras.html">Экшн-камеры</a></li>
               <li class="catalog-menu-popup-second-column"><a href="catalog/fitnes-bracelets.html">Фитнес-браслеты</a></li>
               <li class="catalog-menu-popup-second-column"><a href="catalog/smart-watches.html">Умные часы</a></li>
@@ -64,7 +70,10 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="index.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="breadcrumbs-current"
+            aria-label="Текущая страница товаров: Моноподы для селфи">
+          Моноподы для селфи
+        </li>
       </ul>
 
       <section class="filters">
@@ -217,7 +226,7 @@
 
         <ul class="page-footer-top-cart-operations">          
           <li>
-            <button class="compare-button" type="button">Сравнить</button>
+            <a class="button" href="compare.html">Сравнить</a>
           </li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
