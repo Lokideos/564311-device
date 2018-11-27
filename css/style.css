@@ -124,6 +124,8 @@ a {
 
 .page-header .search-button {
   font-family: 'Open Sans';
+  text-align: center;
+  vertical-align: center;
   color: #000000;
 
   background-color: transparent;
@@ -342,6 +344,8 @@ li[class^=catalog-menu-popup] a {
   line-height: 24px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
   color: #000000;
 
   background-image: linear-gradient(to bottom, #ffffff 30%, #f0c52e 30%, #f0c52e 70%, #ffffff 70%);
