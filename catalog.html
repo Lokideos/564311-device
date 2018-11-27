@@ -7,8 +7,11 @@
     <meta name="description" 
           content="Всегда мечтали делать селфи, как Бен Стиллер!? 
                    Не хватает аксессуаров!? Тогда вам к нам!!">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="page-header">
       <div class="page-header-up">
         <a class="main-logo" href="index.html">
@@ -21,20 +24,20 @@
 
         <form class="search" method="get" action="https://barbershop.ru/search">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-          <input type="search" name="search" id="search-field" placeholder="Найти">
+          <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
 
-          <button class="button visually-hidden" type="submit">Найти</button>
+          <button class="search-button visually-hidden" type="submit">Найти</button>
         </form>
 
         <ul class="page-header-authorization">
           <li class="current-user">
             <a class="current-user-link" href="/users/1">Валентин Петухов</a>
           </li>
-          <li><a href="logout.html">Выйти</a></li>
+          <li><a class="header-user-logout" href="logout.html">Выйти</a></li>
         </ul>
         
         <ul class="page-header-cart-operations">
-          <li><a class="button" href="compare.html">Сравнить</a></li>
+          <li><a href="compare.html">Сравнить</a></li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
       </div>
@@ -218,8 +221,8 @@
     <footer class="page-footer">
       <div class="page-footer-top">
         <a class="footer-logo" href="index.html">
-          <img class="footer-logo"
-               src="img/shared/logo.svg"
+          <img class="footer-logo-img"
+               src="img/shared/orange-logo.svg"
                width="165"
                height="35"
                alt="Device logo; Link to the main page">
@@ -229,12 +232,12 @@
           <li class="current-user">
             <a class="current-user-link" href="/users/1">Валентин Петухов</a>
           </li>
-          <li><a href="logout.html">Выйти</a></li>
+          <li><a class="footer-user-logout" href="logout.html">Выйти</a></li>
         </ul>
 
         <ul class="page-footer-top-cart-operations">          
           <li>
-            <a class="button" href="compare.html">Сравнить</a>
+            <a href="compare.html">Сравнить</a>
           </li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
@@ -257,7 +260,7 @@
       </div>
 
       <div class="page-footer-bottom">
-        <ul class="social-buttons">
+        <ul class="page-footer-social">
           <li><a class="vk-social-button" href="https://vk.com/" target="_blank">VK</a></li>
           <li><a class="facebook-social-button" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
           <li><a class="twitter-social-button" href="https://twitter.com/?lang=ru" target="_blank">Twitter</a></li>
