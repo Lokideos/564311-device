@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #464646;
+  text-transform: normal;
+  
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+.modal {
+  display: none;
+}
