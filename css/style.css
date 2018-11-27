@@ -269,3 +269,50 @@ li[class^=catalog-menu-popup] a {
 .page-footer-copyright a:active {
   color: rgba(244, 190, 4, 0.3);
 }
+
+.about-us-headline,
+.contacts-headline {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about-us p,
+.contacts p {
+  font-family: 'Open Sans';  
+  letter-spacing: 0;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us-delivery-companies li {
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-image: linear-gradient(to bottom, #ffffff 30%, #f0c52e 30%, #f0c52e 70%, #ffffff 70%);
+}
+
+.button:hover,
+.button:focus {
+  background-image: none;
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-image: none;
+  background-color: #f0c52e;
+}
