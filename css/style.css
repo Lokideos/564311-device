@@ -14,7 +14,12 @@ body {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/gilroyextrabold.woff') format('woff');
+  src: url('../fonts/gilroyextrabold.woff') format('woff');  
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../fonts/gilroylight.woff') format('woff');
 }
 
 a {
@@ -340,6 +345,7 @@ li[class^=catalog-menu-popup] a {
   color: #000000;
 
   background-image: linear-gradient(to bottom, #ffffff 30%, #f0c52e 30%, #f0c52e 70%, #ffffff 70%);
+  border: 0;
 }
 
 .button:hover,
@@ -353,4 +359,112 @@ li[class^=catalog-menu-popup] a {
 
   background-image: none;
   background-color: #f0c52e;
+}
+
+.catalog-page .page-headline {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: #eeeeee;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters fieldset {
+  border: 0;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.filters li {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  opacity: 0.5;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+
+  opacity: 0.6;
+}
+
+.filters-button {
+  background-image: linear-gradient(to bottom, #eeeeee 30%, #f0c52e 30%, #f0c52e 70%, #eeeeee 70%);
+}
+
+.products ul {
+  list-style: none;
+}
+
+.products-list-item h3 {
+  font-size: 18px
+  line-height: 24px;
+  color: #000000;
+}
+
+.products-list-item p {
+  font-family: 'Gilroy Light';
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.product-list-item-buttons .to-compare-button {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+
+  border: 0;
+  background-color: transparent;
+}
+
+.product-list-item-buttons .to-cart-button,
+.product-list-item-buttons .to-compare-button {
+  cursor: pointer;
+}
+
+.product-list-item-buttons .to-compare-button:hover,
+.product-list-item-buttons .to-compare-button:focus {
+  color: #000000;
+}
+
+.product-list-item-buttons .to-compare-button:active {
+  color: rgba(0, 0, 0, 0.2);
 }
