@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+.main-logo img {
+  width: 165px;
+  height: 35px;
+}
+
 .modal {
   display: none;
 }
@@ -144,7 +149,7 @@ a {
   letter-spacing: 0.2em;
 }
 
-.site-navigation li[class^=catalog-menu-popup] {
+li[class^=catalog-menu-popup] a {
   font-family: 'Open Sans';
   font-size: 15px;
   line-height: 36px;
@@ -166,4 +171,101 @@ a {
 
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.page-footer {
+  background-color: #464646;
+}
+
+.footer-logo img {
+  width: 165px;
+  height: 35px;
+}
+
+.page-footer-authorization,
+.page-footer-top-cart-operations {
+  list-style: none;
+}
+
+.page-footer-authorization a,
+.page-footer-top-cart-operations a {
+  font-family: 'Open Sans';
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page-footer-authorization a:hover,
+.page-footer-authorization a:focus,
+.page-footer-top-cart-operations a:hover,
+.page-footer-top-cart-operations a:focus {
+  color: #ffffff;
+}
+
+.page-footer-authorization a:active,
+.page-footer-top-cart-operations a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer-address {
+  font-family: 'Open Sans';
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.page-footer-site-navigation {  
+  list-style: none;
+}
+
+.page-footer-site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ffffff;  
+}
+
+.page-footer-site-navigation a:hover,
+.page-footer-site-navigation a:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page-footer-site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer-phone-number {
+  font-family: 'Open Sans';
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.page-footer-social {
+  list-style: none;
+}
+
+.page-footer-social a {
+  color: rgba(181, 181, 181, 0.6)
+}
+
+.page-footer-social a:hover,
+.page-footer-social a:focus {
+  color: #b5b5b5;
+}
+
+.page-footer-social a:active {
+  color: rgba(181, 181, 181, 0.3)
+}
+
+.page-footer-copyright a {
+  color: #f4be04;
+}
+
+.page-footer-copyright a:hover,
+.page-footer-copyright a:focus {
+  color: rgba(244, 190, 4, 0.6);
+}
+
+.page-footer-copyright a:active {
+  color: rgba(244, 190, 4, 0.3);
 }
