@@ -4,9 +4,10 @@ body {
   font-family: 'Gilroy', 'Open Sans', sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 700;
-  color: #464646;
+  font-weight: normal;
   text-transform: normal;
+  letter-spacing: 0.001em;
+  color: #464646;
   
   background-color: #ffffff;
 }
@@ -16,6 +17,153 @@ body {
   src: url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
+a {
+  text-decoration: none;
+}
+
 .modal {
   display: none;
+}
+
+.page-header {
+  background-color: #f7e296;
+}
+
+.page-header input[type="search"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+/* Search placeholder color */
+
+.page-header input[type="search"]::-webkit-input-placeholder {
+  font-family: 'Open Sans';
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.page-header input[type="search"]:hover::-webkit-input-placeholder {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.page-header input[type="search"]:focus::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.page-header input[type="search"]::-moz-placeholder {
+  font-family: 'Open Sans';
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.page-header input[type="search"]:hover::-moz-placeholder {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.page-header input[type="search"]:focus::-moz-placeholder {
+  color: #000000;
+}
+
+.page-header input[type="search"]:-ms-input-placeholder {
+  font-family: 'Open Sans';
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.page-header input[type="search"]:hover:-ms-input-placeholder {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.page-header input[type="search"]:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
+.page-header input[type="search"]:-moz-placeholder {
+  font-family: 'Open Sans';
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.page-header input[type="search"]:hover:-moz-placeholder {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.page-header input[type="search"]:focus:-moz-placeholder {
+  color: #000000;
+}
+
+/* End of search placeholder color */
+
+.page-header .search-button {
+  font-family: 'Open Sans';
+  color: #000000;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.page-header .search-button:hover,
+.page-header .search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.page-header .search-button:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-header-authorization,
+.page-header-cart-operations {
+  list-style: none;
+}
+
+.page-header-authorization a,
+.page-header-cart-operations a {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  color: #000000;
+}
+
+.page-header-authorization a:hover,
+.page-header-cart-operations a:hover,
+.page-header-authorization a:focus,
+.page-header-cart-operations a:focus {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.page-header-authorization a:active,
+.page-header-cart-operations a:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.site-navigation ul {
+  list-style: none;
+}
+
+.site-navigation {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.site-navigation li[class^=catalog-menu-popup] {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0.001em;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.2);
 }
