@@ -80,6 +80,9 @@ a {
 }
 
 .page-header input[type="search"] {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+
   background-color: transparent;
   border: none;
 }
