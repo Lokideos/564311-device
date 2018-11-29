@@ -38,9 +38,13 @@ a {
   text-decoration: none;
 }
 
-.main-logo img {
+.main-logo svg {
   width: 165px;
   height: 35px;
+}
+
+.footer-logo svg {
+  fill: #ffc600;
 }
 
 .modal {
@@ -51,15 +55,12 @@ a {
   background-color: #f7e296;
 }
 
-.catalog-page .logo:hover,
-.catalog-page .logo:focus,
-.catalog-page .footer-logo:hover,
-.catalog-page .footer-logo:focus {
+.catalog-page .main-logo:hover,
+.catalog-page .main-logo:focus {
   opacity: 0.6;
 }
 
-.catalog-page .logo:active,
-.catalog-page .footer-logo:active {
+.catalog-page .main-logo:active {
   opacity: 0.3;
 }
 
@@ -218,11 +219,6 @@ li[class^=catalog-menu-popup] a {
 
 .page-footer {
   background-color: #464646;
-}
-
-.footer-logo img {
-  width: 165px;
-  height: 35px;
 }
 
 .page-footer-authorization,
