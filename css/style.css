@@ -163,6 +163,10 @@ a {
   opacity: 0;
 }
 
+.page-header input[type="search"]:focus + button{
+  opacity: 1;
+}
+
 .page-header .search-button:hover,
 .page-header .search-button:focus {
   color: #ffffff;
