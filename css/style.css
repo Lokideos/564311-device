@@ -207,19 +207,19 @@ a {
   letter-spacing: 0.2em;
 }
 
-li[class^=catalog-menu-popup] a {
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-menu-popup-item a {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
   text-transform: none;
   letter-spacing: 0.001em;
-}
-
-.site-navigation a {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
 }
 
 .site-navigation a:hover,
