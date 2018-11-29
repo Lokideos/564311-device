@@ -462,7 +462,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .product-list-item-buttons .to-compare-button {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-size: 13px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
