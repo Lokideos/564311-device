@@ -142,16 +142,19 @@ a {
 
   background-color: transparent;
   border: 2px solid #000000;
+  opacity: 0;
 }
 
 .page-header .search-button:hover,
 .page-header .search-button:focus {
   color: #ffffff;
   background-color: #000000;
+  opacity: 1;
 }
 
 .page-header .search-button:active {
   color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
 }
 
 .page-header-authorization,
