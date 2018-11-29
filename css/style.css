@@ -81,7 +81,7 @@ a {
 /* Search placeholder color */
 
 .page-header input[type="search"]::-webkit-input-placeholder {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   color: rgb(0, 0, 0, 0.3);
 }
 
@@ -94,7 +94,7 @@ a {
 }
 
 .page-header input[type="search"]::-moz-placeholder {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   color: rgb(0, 0, 0, 0.3);
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 .page-header input[type="search"]:-ms-input-placeholder {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   color: rgb(0, 0, 0, 0.3);
 }
 
@@ -120,7 +120,7 @@ a {
 }
 
 .page-header input[type="search"]:-moz-placeholder {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   color: rgb(0, 0, 0, 0.3);
 }
 
@@ -135,7 +135,7 @@ a {
 /* End of search placeholder color */
 
 .page-header .search-button {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   text-align: center;
   vertical-align: center;
   color: #000000;
@@ -161,7 +161,7 @@ a {
 
 .page-header-authorization a,
 .page-header-cart-operations a {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-weight: normal;
   color: #000000;
 }
@@ -170,7 +170,7 @@ a {
 .page-header-cart-operations a:hover,
 .page-header-authorization a:focus,
 .page-header-cart-operations a:focus {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -190,7 +190,7 @@ a {
 }
 
 li[class^=catalog-menu-popup] a {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: normal;
@@ -229,7 +229,7 @@ li[class^=catalog-menu-popup] a {
 
 .page-footer-authorization a,
 .page-footer-top-cart-operations a {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -264,7 +264,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .page-footer-address {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   letter-spacing: 0;
   color: #ffffff;
 }
@@ -292,7 +292,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .page-footer-phone-number {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   letter-spacing: 0;
   color: #ffffff;
 }
@@ -336,7 +336,7 @@ li[class^=catalog-menu-popup] a {
 
 .about-us p,
 .contacts p {
-  font-family: "Open Sans";
+  font-family: "Open Sans", 'Helvetica', sans-serif;
   letter-spacing: 0;
 }
 
@@ -389,7 +389,7 @@ li[class^=catalog-menu-popup] a {
 
 .breadcrumbs,
 .breadcrumbs a {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
@@ -423,7 +423,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .filters li {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-size: 14px;
   line-height: 40px;
   color: #000000;
@@ -455,7 +455,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .products-list-item p {
-  font-family: 'Gilroy Light';
+  font-family: 'Gilroy Light', 'Helvetica', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
