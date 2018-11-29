@@ -1,7 +1,35 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+       url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+       url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensans.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+}
+
 body {
   margin: 0;
 
-  font-family: 'Gilroy', 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: bold;
@@ -10,34 +38,6 @@ body {
   color: #464646;
   
   background-color: #ffffff;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/gilroyextrabold.woff') format('woff'),
-       url('../fonts/gilroyextrabold.woff2') format('woff2');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/gilroylight.woff') format('woff'),
-       url('../fonts/gilroylight.woff2') format('woff2');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans.woff') format('woff'),
-       url('../fonts/opensans.woff2') format('woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensanslight.woff') format('woff'),
-       url('../fonts/opensanslight.woff2') format('woff2');
-  font-weight: 300;
 }
 
 a {
@@ -91,7 +91,7 @@ a {
 /* Search placeholder color */
 
 .page-header input[type="search"]::-webkit-input-placeholder {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: rgb(0, 0, 0, 0.3);
 }
@@ -105,7 +105,7 @@ a {
 }
 
 .page-header input[type="search"]::-moz-placeholder {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: rgb(0, 0, 0, 0.3);
 }
@@ -119,7 +119,7 @@ a {
 }
 
 .page-header input[type="search"]:-ms-input-placeholder {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: rgb(0, 0, 0, 0.3);
 }
@@ -133,7 +133,7 @@ a {
 }
 
 .page-header input[type="search"]:-moz-placeholder {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: rgb(0, 0, 0, 0.3);
 }
@@ -149,7 +149,7 @@ a {
 /* End of search placeholder color */
 
 .page-header .search-button {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;
   vertical-align: center;
@@ -179,7 +179,7 @@ a {
 
 .page-header-authorization a,
 .page-header-cart-operations a {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #000000;
 }
@@ -188,7 +188,7 @@ a {
 .page-header-cart-operations a:hover,
 .page-header-authorization a:focus,
 .page-header-cart-operations a:focus {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -208,7 +208,7 @@ a {
 }
 
 li[class^=catalog-menu-popup] a {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -242,7 +242,7 @@ li[class^=catalog-menu-popup] a {
 
 .page-footer-authorization a,
 .page-footer-top-cart-operations a {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
@@ -278,7 +278,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .page-footer-address {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0;
   color: #ffffff;
@@ -306,7 +306,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .page-footer-phone-number {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0;
   color: #ffffff;
@@ -351,7 +351,7 @@ li[class^=catalog-menu-popup] a {
 
 .about-us p,
 .contacts p {
-  font-family: "Open Sans", 'Helvetica', sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0;
 }
@@ -368,7 +368,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .button {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -406,7 +406,7 @@ li[class^=catalog-menu-popup] a {
 
 .breadcrumbs,
 .breadcrumbs a {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -441,7 +441,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .filters li {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -481,7 +481,7 @@ li[class^=catalog-menu-popup] a {
 }
 
 .product-list-item-buttons .to-compare-button {
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
