@@ -692,3 +692,33 @@ a {
 .product-list-item-buttons .to-compare-button:active {
   color: rgba(0, 0, 0, 0.2);
 }
+
+.catalog-columns {
+  display: flex;
+}
+
+.filter {
+  width: 328px;
+}
+
+.products {  
+  width: 760px;
+  margin-left: 72px;  
+}
+
+.products-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  flex-wrap: wrap;
+}
+
+.products-list-item {
+  width: 360px;
+  margin-right: 40px;
+}
+
+.products-list-item:nth-child(2n) {
+  margin-right: 0;
+}
