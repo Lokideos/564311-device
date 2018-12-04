@@ -115,11 +115,11 @@ a {
   justify-content: space-between;
 }
 
-.index-columns section:first-of-type {
+.about-us {
   width: 460px;
 }
 
-.index-columns section:last-of-type {
+.contacts {
   width: 560px;
 }
 
