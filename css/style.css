@@ -354,6 +354,8 @@ a {
 .page-footer-middle {
   display: flex;
   margin-bottom: 58px;
+
+  justify-content: space-between;
 }
 
 .page-footer-address {
@@ -364,12 +366,10 @@ a {
   width: 425px;
   margin: 0;
   padding: 0;
-  margin-left: 165px;
 }
 
 .page-footer-phone-number {
   margin: 0;
-  margin-left: auto;
 }
 
 .page-footer-bottom {
