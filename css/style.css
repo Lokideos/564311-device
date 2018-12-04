@@ -671,7 +671,7 @@ a {
 }
 
 .catalog-wrapper {
-  background-image: linear-gradient(to right, #eeeeee 37%, white 37%);
+  background-image: linear-gradient(to right, #eeeeee 30%, white 30%);
 }
 
 .catalog-columns {
@@ -682,13 +682,15 @@ a {
 
 
 .filters {
-  width: 300px;
+  width: 328px;
+
+  background-color: #eeeeee; 
 }
 
 .products {
   width: 760px;
-  
-  margin-bottom: 77px;
+
+  margin-bottom: 72px;
 }
 
 .products-list {
