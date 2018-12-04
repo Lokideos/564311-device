@@ -665,9 +665,10 @@ a {
   margin-top: 0;
 }
 
-.wrapper {
+.catalog-category-wrapper {
   width: 1040px;
   margin: 0 auto;
+  padding: 0 80;
 }
 
 .catalog-wrapper {
