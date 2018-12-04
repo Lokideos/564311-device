@@ -326,14 +326,17 @@ a {
 
 .page-footer-top {
   display: flex;
-  margin-top: 65px;
-  margin-bottom: 32px;
+  margin-top: 66px;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  margin-right: auto;
 }
 
 .footer-top-right-column {
   display: flex;
   width: 325px;
-  margin-left: 675px;
 }
 
 .page-footer-authorization,
@@ -343,12 +346,17 @@ a {
   list-style: none;
 }
 
+.page-footer-authorization {
+  width: 115px;
+}
+
 .page-footer-cart-operations {
-  margin-left: auto;
+  width: 215px;
 }
 
 .page-footer-middle {
   display: flex;
+  margin-bottom: 58px;
 }
 
 .page-footer-address {
@@ -357,6 +365,8 @@ a {
 
 .page-footer-site-navigation {
   width: 425px;
+  margin: 0;
+  padding: 0;
   margin-left: 165px;
 }
 
