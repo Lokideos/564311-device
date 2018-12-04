@@ -97,55 +97,18 @@ a {
 
 .site-navigation-catalog {
   display: flex;
-
-  flex-direction: column;
 }
 
-.site-navigation-catalog > li:first-child {
-  display: flex;
-  width: 555px;
-  margin-top: -25px;
-  
-  flex-direction: column;
-  order: 1;
+.catalog-menu-popup-section {
+  margin-right: auto;
 }
 
-.site-navigation-catalog > li:first-child > a {
-  margin-bottom: 25px;
+.site-navigation-catalog > li:nth-of-type(3) {
+  margin-left: 40px;
 }
 
-.catalog-menu-popup {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 200px;
-}
-
-.catalog-menu-popup > ul:nth-child(2) {
-  margin-left: 60px;
-}
-
-.catalog-menu-popup > ul:last-child {
-  margin-left: 75px;
-}
-
-.site-navigation-options {
-  display: flex;
-}
-
-.site-navigation-options > li:first-child {
-  width: 125px;
-  margin-left: 540px;
-}
-
-.site-navigation-options > li:nth-child(2) {
-  width: 115px;
-  margin-left: 37px;
-}
-
-.site-navigation-options > li:last-child {
-  width: 125px;
-  margin-left: 113px;
+.site-navigation-catalog > li:last-of-type {
+  margin-left: 110px;
 }
 
 .index-columns {
