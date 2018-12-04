@@ -670,36 +670,25 @@ a {
   margin: 0 auto;
 }
 
-.catalog-columns {
-  display: flex;
-  justify-content: center;
+.catalog-wrapper {
+  background-image: linear-gradient(to right, #eeeeee 37%, white 37%);
 }
 
 .catalog-columns {
-  background-color: transparent;
+  display: flex;
+
+  justify-content: space-between;
 }
 
-.wrapper-left {
-  display: flex;
-  background-color: #eeeeee;
-  width: 37%;
-}
-
-.wrapper-right {
-  display: flex;
-  width: 63%;
-}
 
 .filters {
   width: 300px;
-  margin-left: auto;
-  margin-right: 28px;
 }
 
 .products {
-  width: 800px;
-  margin-left: 54px;
-  margin-right: auto;
+  width: 760px;
+  
+  margin-bottom: 77px;
 }
 
 .products-list {
