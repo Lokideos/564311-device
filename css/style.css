@@ -62,14 +62,14 @@ a {
 
 .page-header-logo {
   width: 165px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   align-self: flex-start;
 }
 
 .page-header-up {
   display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 39px;
 }
 
 .page-header-up form {
