@@ -336,7 +336,7 @@ a {
 
 .footer-top-right-column {
   display: flex;
-  width: 325px;
+  width: 480px;
 }
 
 .page-footer-authorization,
@@ -346,12 +346,9 @@ a {
   list-style: none;
 }
 
-.page-footer-authorization {
-  width: 115px;
-}
-
 .page-footer-cart-operations {
   width: 215px;
+  margin-left: auto;
 }
 
 .page-footer-middle {
