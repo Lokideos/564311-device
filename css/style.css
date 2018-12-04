@@ -690,3 +690,7 @@ a {
 .products-list-item:nth-child(2n) {
   margin-right: 0;
 }
+
+.site-navigation .selected-goods-type:hover {
+  color: #000000;
+}
