@@ -71,13 +71,14 @@ a {
 }
 
 .page-header-up form {
+  box-sizing: border-box;
   width: 240px;
+  margin-right: auto;
 }
 
 .page-header-authorization {
-  width: 260px;
+  width: 280px;
   margin: 0;
-  margin-left: 340px;
   padding: 0;
 }
 
@@ -85,7 +86,6 @@ a {
   width: 220px;
   margin: 0;
   padding: 0;
-  margin-left: auto;
 }
 
 .site-navigation ul {
