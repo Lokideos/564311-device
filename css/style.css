@@ -44,7 +44,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.content-container {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -665,10 +665,10 @@ a {
   margin-top: 0;
 }
 
-.catalog-category-wrapper {
+.centring-wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 0 80;
+  padding: 0 80px;
 }
 
 .catalog-wrapper {
