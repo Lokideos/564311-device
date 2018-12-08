@@ -44,6 +44,28 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+}
+
 .content-container {
   width: 1160px;
   margin: 0 auto;
@@ -52,10 +74,11 @@ a {
 
 .page-header {
   display: flex;
+  flex-direction: column;
   margin-top: 40px;
   padding: 0 60px;
 
-  flex-direction: column;  
+  background-color: #f7e296;
 }
 
 .page-header-logo {
@@ -76,6 +99,11 @@ a {
   margin-right: auto;
 }
 
+.page-header-authorization,
+.page-header-cart-operations {
+  list-style: none;
+}
+
 .page-header-authorization {
   width: 280px;
   margin: 0;
@@ -88,13 +116,60 @@ a {
   padding: 0;
 }
 
+.page-header-authorization a,
+.page-header-cart-operations a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.page-header-authorization a:hover,
+.page-header-cart-operations a:hover,
+.page-header-authorization a:focus,
+.page-header-cart-operations a:focus {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-header-authorization a:active,
+.page-header-cart-operations a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 .site-navigation ul {
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation-catalog {
   display: flex;
+}
+
+.site-navigation .selected-goods-type:hover {
+  color: #000000;
 }
 
 .catalog-menu-popup-section {
@@ -123,6 +198,31 @@ a {
   width: 560px;
 }
 
+.about-us-headline,
+.contacts-headline {
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about-us p,
+.contacts p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us-delivery-companies li {
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
 .main-logo svg {
   width: 165px;
   height: 35px;
@@ -130,14 +230,6 @@ a {
 
 .footer-logo svg {
   fill: #ffc600;
-}
-
-.modal {
-  display: none;
-}
-
-.page-header {
-  background-color: #f7e296;
 }
 
 .catalog-page .main-logo:hover,
@@ -258,47 +350,6 @@ a {
   opacity: 1;
 }
 
-.page-header-authorization,
-.page-header-cart-operations {
-  list-style: none;
-}
-
-.page-header-authorization a,
-.page-header-cart-operations a {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: #000000;
-}
-
-.page-header-authorization a:hover,
-.page-header-cart-operations a:hover,
-.page-header-authorization a:focus,
-.page-header-cart-operations a:focus {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.page-header-authorization a:active,
-.page-header-cart-operations a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation ul {
-  list-style: none;
-}
-
-.site-navigation {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.site-navigation a {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
 .catalog-menu-popup-item a {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -306,15 +357,6 @@ a {
   font-weight: 300;
   text-transform: none;
   letter-spacing: 0.001em;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.site-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .page-footer {
@@ -494,31 +536,6 @@ a {
   color: rgba(244, 190, 4, 0.3);
 }
 
-.about-us-headline,
-.contacts-headline {
-  font-size: 47px;
-  line-height: 48px;
-  color: #000000;
-}
-
-.about-us p,
-.contacts p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0;
-}
-
-.about-us ul {
-  list-style: none;
-}
-
-.about-us-delivery-companies li {
-  font-size: 16px;
-  line-height: 40px;
-  letter-spacing: 0;
-  color: #000000;
-}
-
 .button {
   font-family: 'Gilroy', Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -655,10 +672,6 @@ a {
 
 .product-list-item-buttons .to-compare-button:active {
   color: rgba(0, 0, 0, 0.2);
-}
-
-.site-navigation .selected-goods-type:hover {
-  color: #000000;
 }
 
 .catalog-page .page-footer {
