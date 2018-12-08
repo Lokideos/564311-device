@@ -73,6 +73,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -82,22 +84,43 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-logo {
+  position: absolute;
+  top: -18px;
+
   width: 165px;
-  margin-bottom: 28px;
 
   align-self: flex-start;
 }
 
 .page-header-up {
   display: flex;
-  margin-bottom: 39px;
+  margin-top: 44px;
+  margin-bottom: 36px;
 }
 
 .page-header-up form {
+  position: relative;
+
+  padding-left: 38px;
+
   box-sizing: border-box;
   width: 240px;
   margin-right: auto;
 }
+
+.page-header-up form::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 4px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/shared/search.svg");
+}
+
 
 .page-header-authorization,
 .page-header-cart-operations {
@@ -111,16 +134,62 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-cart-operations {
+  display: flex;
+  justify-content: flex-end;
   width: 220px;
   margin: 0;
   padding: 0;
 }
 
+.page-header-cart-operations li:last-of-type {
+  margin-left: 36px;
+}
+
 .page-header-authorization a,
 .page-header-cart-operations a {
+  position: relative;
+
+  padding-left: 28px;
+
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #000000;
+}
+
+.page-header-authorization a::before,
+.page-header-cart-operations a::before {
+  content: "";
+
+  position: absolute;
+}
+
+.login-link::before {
+  top: 3px;
+  left: 1px;
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/shared/user.svg");  
+}
+
+.compare-link::before {
+  top: 5px;
+  left: 8px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/shared/compare.svg");  
+}
+
+.cart-link::before {
+  top: 3px;
+  left: 6px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/shared/cart.svg");  
 }
 
 .page-header-authorization a:hover,
@@ -139,7 +208,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
 }
 
 .site-navigation ul {
@@ -166,6 +235,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-catalog {
   display: flex;
+  /*justify-content: flex-end;*/
 }
 
 .site-navigation .selected-goods-type:hover {
@@ -173,15 +243,76 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-menu-popup-section {
+  position: relative;
+
   margin-right: auto;
 }
 
 .site-navigation-catalog > li:nth-of-type(3) {
-  margin-left: 40px;
+  margin-left: 32px;
 }
 
 .site-navigation-catalog > li:last-of-type {
-  margin-left: 110px;
+  margin-left: 106px;
+  margin-right: -4px;
+}
+
+.catalog-menu-popup-link {
+  position: relative;
+
+  padding-right: 30px;
+}
+
+.catalog-menu-popup-link::after {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  right: 4px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/shared/plus.svg");
+  opacity: 0.3;
+}
+
+.catalog-menu-popup-background-wrapper {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+
+  width: 1038px;
+  padding: 0 61px;
+  padding-top: 16px;
+
+  background-color: #f7e296;
+}
+
+.catalog-menu-popup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 142px;
+}
+
+.catalog-menu-popup-item {
+  margin-right: 62px;
+}
+
+.kvadrokopters-menu-option {
+  margin-left: 15px;
+  min-height: 142px;
+}
+
+.catalog-menu-popup-item a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0.001em;
 }
 
 .index-columns {
@@ -348,15 +479,6 @@ input[type="radio"].visually-hidden {
 .page-header .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
-}
-
-.catalog-menu-popup-item a {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 36px;
-  font-weight: 300;
-  text-transform: none;
-  letter-spacing: 0.001em;
 }
 
 .page-footer {
