@@ -129,9 +129,31 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-authorization {
+  display: flex;
+
   width: 280px;
   margin: 0;
   padding: 0;
+}
+
+.current-user-link {
+  position: relative;
+}
+
+.current-user-link::before {
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/shared/user.svg");  
+}
+
+.page-header-authorization .header-user-logout {
+  padding-left: 20px;
+
+  opacity: 0.3;
 }
 
 .page-header-cart-operations {
