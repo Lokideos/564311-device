@@ -604,7 +604,7 @@ input[type="radio"].visually-hidden {
 .footer-top-right-column {
   display: flex;
   justify-content: flex-end;
-  width: 480px;
+  width: 500px;
 }
 
 .page-footer-authorization,
@@ -614,6 +614,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.page-footer-authorization {  
+  width: 280px;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer-authorization a,
@@ -629,6 +635,10 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-logout {
+  margin-left: 18px; 
 }
 
 .footer-top-icon {
