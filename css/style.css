@@ -44,10 +44,6 @@ a {
   text-decoration: none;
 }
 
-.catalog-menu-popup {
-  display: none !important;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -82,7 +78,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 200px;
   padding: 0 60px;  
   padding-bottom: 45px;
 
@@ -91,6 +87,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-page .page-header {
   margin-bottom: 35px;
+}
+
+.catalog-page .catalog-menu-popup {
+  display: none;
 }
 
 .page-header-logo {
