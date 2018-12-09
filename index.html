@@ -237,50 +237,51 @@
     <section class="modal modal-contact-us">
       <h2 class="visually-hidden">Форма Аутентификации</h2>
       <form class="contact-us-form" method="post" action="https://barbershop.ru/contact_us.html">
-        <p>
-          <label for="contact-us-name">Ваше имя:</label>
-          <input class="contact-us-name"
-                 type="text"
-                 name="modal-name"
-                 id="contact-us-name"
-                 placeholder="Имя Фамилия">
-        </p>
+        <div class="contact-us-upper">
+          <p>
+            <label for="contact-us-name">Ваше имя:</label>
+            <input class="contact-us-name contact-us-input-element"
+                   type="text"
+                   name="modal-name"
+                   id="contact-us-name"
+                   placeholder="Имя Фамилия" invalid>
+          </p>
 
-        <p>
-          <label for="contact-us-email">Ваш e-mail:</label>
-          <input class="contact-us-email"
-                 type="text"
-                 name="modal-email"
-                 id="contact-us-email"
-                 placeholder="email@example.come">
-        </p>
+          <p>
+            <label for="contact-us-email">Ваш e-mail:</label>
+            <input class="contact-us-email contact-us-input-element"
+                   type="text"
+                   name="modal-email"
+                   id="contact-us-email"
+                   placeholder="email@example.com">
+          </p>
+        </div>
 
         <p>
           <label for="contact-us-text">Текст письма:</label>
-          <textarea class="contact-us-text"
+          <textarea class="contact-us-text contact-us-input-element"
                     name="modal-text"
                     id="contact-us-text"
                     rows="5"
-                    cols="80">
-            В свободной форме
+                    cols="80">В свободной форме
           </textarea>
         </p>
 
-        <button class="button" type="submit">Отправить</button>
+        <button class="button contact-us-button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть форму аутентификации</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть форму аутентификации</span></button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <a class="modal-map-widget" href="https://www.google.com/maps">
         <img src="img/shared/popup-map.jpg"
-             width="994"
-             height="593"
+             width="960"
+             height="559"
              alt="Офис компании по адресу ул. Строителей 15,
                   Москва">
       </a>
-      <button class="modal-close" type="button">Закрыть карту</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть карту</span></button>
     </section>
   </body>
 </html>
