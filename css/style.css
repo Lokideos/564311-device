@@ -82,15 +82,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  margin-bottom: 250px;
+  margin-bottom: 70px;
   padding: 0 60px;  
+  padding-bottom: 45px;
 
   background-color: #f7e296;
 }
 
 .catalog-page .page-header {
   margin-bottom: 35px;
-  padding-bottom: 45px;
 }
 
 .page-header-logo {
