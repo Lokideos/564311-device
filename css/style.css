@@ -1410,6 +1410,8 @@ input[type="radio"].visually-hidden {
 
 .contact-us-button {
   width: 200px;
+
+  cursor: pointer;
 }
 
 .modal-close {
@@ -1426,6 +1428,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/shared/modal-close.svg");
   background-color: transparent;
   opacity: 0.5;
+
+  cursor: pointer;
 }
 
 .modal-close:hover,
