@@ -108,7 +108,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 36px;
 }
 
-.page-header-up form {
+.page-header-up .search {
   position: relative;
 
   padding-left: 38px;
