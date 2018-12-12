@@ -40,6 +40,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -94,17 +99,12 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-logo {
-  position: absolute;
+  position: relative;
   top: -18px;
-
-  width: 165px;
-
-  align-self: flex-start;
 }
 
 .page-header-up {
   display: flex;
-  margin-top: 44px;
   margin-bottom: 36px;
 }
 
