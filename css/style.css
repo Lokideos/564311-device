@@ -118,17 +118,12 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 }
 
-.page-header-up form::before {
-  content: "";
+.page-header-up .search::before {
+  content: url("../img/shared/search.svg");
 
   position: absolute;
-  top: 7px;
+  top: 3px;
   left: 4px;
-
-  width: 16px;
-  height: 16px;
-
-  background-image: url("../img/shared/search.svg");
 }
 
 
@@ -150,6 +145,8 @@ input[type="radio"].visually-hidden {
 }
 
 .current-user-link::before {
+  content: "";
+
   position: absolute;
   top: 3px;
   left: 1px;
@@ -192,38 +189,28 @@ input[type="radio"].visually-hidden {
 .page-header-cart-operations a::before,
 .page-footer-authorization a::before,
 .page-footer-cart-operations a::before {
-  content: "";
-
   position: absolute;
 }
 
 .login-link::before {
-  top: 3px;
-  left: 1px;
-  width: 13px;
-  height: 12px;
+  content: url("../img/shared/user.svg");
 
-  background-image: url("../img/shared/user.svg");  
+  top: -6px;
+  left: 1px;
 }
 
 .compare-link::before {
-  top: 5px;
+  content: url("../img/shared/compare.svg");
+
+  top: -6px;
   left: 8px;
-
-  width: 10px;
-  height: 10px;
-
-  background-image: url("../img/shared/compare.svg");  
 }
 
 .cart-link::before {
-  top: 3px;
+  content: url("../img/shared/cart.svg");
+
+  top: -6px;
   left: 6px;
-
-  width: 12px;
-  height: 12px;
-
-  background-image: url("../img/shared/cart.svg");  
 }
 
 .page-header-authorization a:hover,
@@ -269,7 +256,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-catalog {
   display: flex;
-  /*justify-content: flex-end;*/
 }
 
 .site-navigation .selected-goods-type:hover {
@@ -298,16 +284,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-menu-popup-link::after {
-  content: "";
+  content: url("../img/shared/plus.svg");
 
   position: absolute;
-  top: 3px;
+  top: 0;
   right: 4px;
-
-  width: 16px;
-  height: 16px;
-
-  background-image: url("../img/shared/plus.svg");
+  
   opacity: 0.3;
 }
 
@@ -1414,19 +1396,19 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.modal-close {
+.modal-close {  
   content: "";
 
-  position: absolute;
+  position: absolute;  
   top: 24px;
   right: 22px;
 
   width: 55px;
   height: 55px;
 
-  border: none;
+  border: none;  
+  background-color: transparent;  
   background-image: url("../img/shared/modal-close.svg");
-  background-color: transparent;
   opacity: 0.5;
 
   cursor: pointer;
