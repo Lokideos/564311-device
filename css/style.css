@@ -185,16 +185,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.page-header-authorization a::before,
-.page-header-cart-operations a::before,
-.page-footer-authorization a::before,
-.page-footer-cart-operations a::before {
-  position: absolute;
-}
-
 .login-link::before {
   content: url("../img/shared/user.svg");
-
+  
+  position: absolute;
   top: -6px;
   left: 1px;
 }
@@ -202,6 +196,7 @@ input[type="radio"].visually-hidden {
 .compare-link::before {
   content: url("../img/shared/compare.svg");
 
+  position: absolute;
   top: -6px;
   left: 8px;
 }
@@ -209,6 +204,7 @@ input[type="radio"].visually-hidden {
 .cart-link::before {
   content: url("../img/shared/cart.svg");
 
+  position: absolute;
   top: -6px;
   left: 6px;
 }
@@ -217,8 +213,6 @@ input[type="radio"].visually-hidden {
 .page-header-cart-operations a:hover,
 .page-header-authorization a:focus,
 .page-header-cart-operations a:focus {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -912,7 +906,7 @@ input[type="radio"].visually-hidden {
   width: 4px;
   height: 7px;
 
-  background-image: url(../img/shared/nav-arrow.svg);
+  background-image: url("../img/shared/nav-arrow.svg");
 }
 
 .breadcrumbs-current::after {
