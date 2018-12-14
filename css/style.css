@@ -567,22 +567,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo {
-  position: relative;
-
   margin-right: auto;
-}
-
-.footer-logo::after {
-  content: "";
-
-  position: absolute;
-  top: 172px;
-  left: 0;
-
-  width: 80px;
-  height: 7px;
-
-  background-color: #ffc600;
 }
 
 .footer-top-right-column {
@@ -681,8 +666,23 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer-address {
+  position: relative;
+
   width: 360px;
   margin: 0;
+}
+
+.page-footer-address::after {
+  content: "";
+
+  position: absolute;
+  top: 107px;
+  left: 1px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
 }
 
 .page-footer-site-navigation {
