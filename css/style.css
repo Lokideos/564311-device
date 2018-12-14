@@ -706,8 +706,15 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer-bottom {
-  display: flex;
+  display: flex;  
   justify-content: flex-end;
+}
+
+.page-footer-bottom-right-column {
+  display: flex;
+  justify-content: space-between;
+  width: 660px;
+  margin-left: 500px;
 }
 
 .page-footer-authorization a:hover,
@@ -826,6 +833,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer-copyright {
+  width: 27px;
   padding-left: 33px;
 }
 
