@@ -104,8 +104,11 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-up {
+  position: relative;
+  top: -2px;
+
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .page-header-up .search {
@@ -138,6 +141,10 @@ input[type="radio"].visually-hidden {
   width: 280px;
   margin: 0;
   padding: 0;
+}
+
+.current-user {
+  letter-spacing: 0.02em;
 }
 
 .current-user-link {
@@ -580,7 +587,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top-right-column {
   position: relative;
-  top: -5px;
+  top: -2px;
 
   display: flex;
   justify-content: space-between;
@@ -597,7 +604,7 @@ input[type="radio"].visually-hidden {
 
 .page-footer-authorization {  
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 225px;
   margin: 0;
   padding: 0;
@@ -609,7 +616,7 @@ input[type="radio"].visually-hidden {
 
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 30px;
   color: rgba(255, 255, 255, 0.7);
 }
 
