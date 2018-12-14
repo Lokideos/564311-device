@@ -109,13 +109,13 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header-up .search {
-  position: relative;
-
-  padding-left: 38px;
-
+  position: relative;   
+  
+  display: flex;
   box-sizing: border-box;
   width: 240px;
   margin-right: auto;
+  padding-left: 38px;
 }
 
 .page-header-up .search::before {
@@ -529,8 +529,9 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-.page-header input[type="search"]:focus + button{
+.search:focus + .search-button {
   opacity: 1;
+  background-color: red;
 }
 
 .page-header .search-button:hover,
