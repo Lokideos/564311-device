@@ -1106,9 +1106,29 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-.product-list-item-buttons:hover,
-.product-list-item-buttons:focus {
-  opacity: 1;
+.products-list-item:hover .product-list-item-buttons,
+.products-list-item:focus .product-list-item-buttons {
+  opacity: 1;  
+}
+
+.products-list-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 360px;
+  height: 379px;
+
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+.products-list-item:hover::before,
+.products-list-item:focus::before {
+  display: block;
 }
 
 .product-list-item-buttons .to-cart-button {
@@ -1136,30 +1156,18 @@ input[type="radio"].visually-hidden {
   background-color: #f0c52e;
 }
 
-.products-list-item img:hover + .product-list-item-buttons {
-  opacity: 1;
-
-  cursor: pointer;
-}
-
-.products-list-item img:hover {
-  opacity: 0.7;
-
-  cursor: pointer;
-}
-
 .new-product{
   position: relative;
 }
 
-.new-product::before {
+.new-product .product-card-upper-part::before {
   content: "";
 
   position: absolute;
   top: 30px;
-  right: 27px;
+  right: 26px;
 
-  width: 55px;
+  width: 56px;
   height: 55px;
 
   border: 2px solid #000000;
@@ -1167,7 +1175,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.new-product::after {
+.new-product .product-card-upper-part::after {
   content: "NEW";
 
   position: absolute;
