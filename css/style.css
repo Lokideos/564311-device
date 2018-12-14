@@ -1141,12 +1141,13 @@ input[type="radio"].visually-hidden {
 .product-list-item-buttons {
   position: absolute;
   top: 170px;
-  left: 80px;
-
-  text-align: center;
+  left: 80px;  
+  
+  text-align: center;  
 
   opacity: 0;
 }
+
 
 .products-list-item:hover .product-list-item-buttons,
 .products-list-item:focus .product-list-item-buttons {
@@ -1175,10 +1176,12 @@ input[type="radio"].visually-hidden {
 
 .product-list-item-buttons .to-cart-button {
   position: relative;
-  z-index: 0;  
+  z-index: 0;
 
   width: 200px;
   min-height: 40px;
+  padding-top: 9px;
+  padding-right: 7px;
   
   background-color: transparent;
   background-image: none;
@@ -1188,7 +1191,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 0;
   z-index: -1;
 
@@ -1234,7 +1237,9 @@ input[type="radio"].visually-hidden {
 }
 
 .product-list-item-buttons .to-compare-button {
+  display: block;
   min-height: 51px;
+  padding-top: 7px;  
 
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 13px;
