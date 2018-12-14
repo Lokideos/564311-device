@@ -555,7 +555,7 @@ input[type="radio"].visually-hidden {
 
 .page-footer {
   display: flex;
-  margin-top: 93px;
+  margin-top: 90px;
 
   background-color: #464646;
 }
@@ -1423,12 +1423,6 @@ input[type="radio"].visually-hidden {
 
 .modal-contact-us .contact-us-text:focus {
   color: #000000;
-}
-
-.contact-us-button {
-  width: 200px;
-
-  cursor: pointer;
 }
 
 .modal-close {  
