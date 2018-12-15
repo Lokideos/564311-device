@@ -1391,9 +1391,8 @@ input[type="radio"].visually-hidden {
   width: 360px;
 }
 
-.modal-contact-us .contact-us-name,
-.modal-contact-us .contact-us-email,
-.modal-contact-us .contact-us-text {
+
+.contact-us-form-input {
   box-sizing: border-box;
   padding: 16px 20px;
   width: 360px;
@@ -1410,15 +1409,11 @@ input[type="radio"].visually-hidden {
   border: none;  
 }
 
-.modal-contact-us .contact-us-name:hover,
-.modal-contact-us .contact-us-email:hover,
-.modal-contact-us .contact-us-text:hover {
+.contact-us-form-input:hover {
   background-color: #f2f2f2;
 }
 
-.modal-contact-us .contact-us-name:focus,
-.modal-contact-us .contact-us-email:focus,
-.modal-contact-us .contact-us-text:focus {
+.contact-us-form-input:focus {
   background-color: transparent;
   outline: #f7e296 solid 3px;
 }
