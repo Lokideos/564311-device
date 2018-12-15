@@ -1420,6 +1420,10 @@ input[type="radio"].visually-hidden {
   outline: #f7e296 solid 3px;
 }
 
+.contact-us-text {
+  resize: none;
+}
+
 .modal-contact-us .contact-us-text {
   width: 760px;
   min-height: 155px;
