@@ -1439,9 +1439,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.modal-close {  
-  content: "";
-
+.modal-close {
   position: absolute;  
   top: 24px;
   right: 22px;
