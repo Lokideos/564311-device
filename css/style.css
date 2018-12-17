@@ -104,7 +104,7 @@ input[type="radio"].visually-hidden {
   top: -2px;
 
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 15px; 
 }
 
 .page-header-up .search {
@@ -114,17 +114,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 240px;
   margin-right: auto;
-  padding-left: 38px;
 }
-
-.page-header-up .search::before {
-  content: url("../img/shared/search.svg");
-
-  position: absolute;
-  top: 3px;
-  left: 4px;
-}
-
 
 .page-header-authorization,
 .page-header-cart-operations {
@@ -533,11 +523,34 @@ input[type="radio"].visually-hidden {
 
 /* End of search placeholder color */
 
+.page-header-up .search-field {
+  min-width: 356px;
+  height: 39px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+
+  background-image: url("../img/shared/search.svg");
+  background-position: 4px 7px;
+  background-repeat: no-repeat;
+
+  outline: 0;
+}
+
 .page-header .search-button {
+  position: relative;
+  top: -10px;
+
+  box-sizing: border-box;
+  width: 85px;
+  min-height: 49px;
+  padding: 10px 0;
+  padding-left: 19px;
+  padding-right: 21px;
+
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300;
-  vertical-align: center;
+  vertical-align: middle;
   color: #000000;
 
   background-color: transparent;
@@ -545,9 +558,8 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-.search:focus + .search-button {
+.search-field:focus + .search-button {
   opacity: 1;
-  background-color: red;
 }
 
 .page-header .search-button:hover,
