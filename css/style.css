@@ -1701,4 +1701,18 @@ p.about-us-info-delivery-ad {
 
 .modal-show {
   display: block;
+
+  animation-name: popup-show;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popup-show {
+  from {
+    top: -2000px;
+  }
+  to {
+    top: 100px;
+  }
 }
