@@ -126,7 +126,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 240px;
+  width: 500px;
   margin-right: auto;
 }
 
