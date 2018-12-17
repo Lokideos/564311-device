@@ -375,7 +375,6 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us {
-  /*width: 460px;*/
   width: 475px;
 }
 
@@ -425,12 +424,12 @@ input[type="radio"].visually-hidden {
 p.about-us-info-delivery-ad {
   margin-bottom: 60px;
 
-  letter-spacing: 
+  letter-spacing: 0;
 }
 
-.about-us ul {
+.about-us-delivery-companies {
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 53px;
   padding: 0;
   padding-top: 5px;
 
@@ -464,7 +463,7 @@ p.about-us-info-delivery-ad {
 }
 
 .contacts-map {
-  margin-bottom: 68px;
+  margin-bottom: 58px;
 }
 
 .main-logo svg {
@@ -621,7 +620,7 @@ p.about-us-info-delivery-ad {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 88px;
+  margin-top: 81px;
   min-height: 323px;
 
   background-color: #464646;
@@ -976,6 +975,7 @@ p.about-us-info-delivery-ad {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 260px;
+  padding: 8px 0;
   padding-left: 7px;
 
   font-family: 'Gilroy', Helvetica, Arial, sans-serif;
@@ -994,7 +994,7 @@ p.about-us-info-delivery-ad {
 
   background-image: -o-linear-gradient(top, #ffffff 35%, #f0c52e 35%, #f0c52e 65%, #ffffff 65%);
 
-  background-image: linear-gradient(to bottom, #ffffff 35%, #f0c52e 35%, #f0c52e 65%, #ffffff 65%);
+  background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
   border: 0;
 }
 
