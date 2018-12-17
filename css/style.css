@@ -91,7 +91,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 300px;
+  min-height: 185px;
   margin-top: 40px;
   margin-bottom: 200px;
   padding: 0 60px;
@@ -100,7 +100,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .page-header {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .page-header-logo {
@@ -573,8 +573,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/shared/search.svg");
   background-position: 4px 7px;
   background-repeat: no-repeat;
-
-  outline: 0;
 }
 
 .page-header .search-button {
