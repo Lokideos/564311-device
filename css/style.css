@@ -620,6 +620,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin-top: 90px;
+  min-height: 323px;
 
   background-color: #464646;
 }
