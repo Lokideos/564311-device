@@ -1413,9 +1413,9 @@ p.about-us-info-delivery-ad {
 }
 
 .product-card-upper-part h3 {
-  width: 250px;
+  width: 255px;
 
-  letter-spacing: 0.02em;
+  letter-spacing: 0.001em;
 }
 
 .product-card-upper-part p {
