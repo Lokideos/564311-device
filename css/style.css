@@ -379,7 +379,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us {
-  width: 460px;
+  /*width: 460px;*/
+  width: 475px;
 }
 
 .contacts {
@@ -391,7 +392,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 
   font-size: 47px;
   line-height: 48px;
@@ -419,11 +420,16 @@ input[type="radio"].visually-hidden {
 
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  letter-spacing: 0;
 }
 
 .contacts p {
   margin-bottom: 40px;
+}
+
+p.about-us-info-delivery-ad {
+  margin-bottom: 60px;
+
+  letter-spacing: 
 }
 
 .about-us ul {
@@ -619,7 +625,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 90px;
+  margin-top: 88px;
   min-height: 323px;
 
   background-color: #464646;
