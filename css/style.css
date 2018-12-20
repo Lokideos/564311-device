@@ -88,8 +88,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 185px;
-  margin-top: 40px;
-  margin-bottom: 200px;
+  margin-top: 40px;  
   padding: 0 60px;
 
   background-color: #f7e296;
@@ -309,10 +308,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 30px;
   left: -60px;
+  z-index: 2;
 
-  width: 1038px;
+  width: 1038px;  
   padding: 0 61px;
   padding-top: 16px;
+  padding-bottom: 3px;
 
   background-color: #f7e296;
 }
@@ -1750,4 +1751,220 @@ p.about-us-info-delivery-ad {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.featured-products {
+  position: relative;
+
+  margin-bottom: 115px;
+}
+
+.featured-products::before {
+  content: "";
+
+  position: absolute;
+  top: 40px;
+  right: 459px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.featured-products-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.featured-products-list-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-products-list-item-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-products-list-image {
+  width: 560px;
+
+  text-align: center;
+}
+
+.featured-products-list-image img {
+  padding-top: 3px;
+  padding-left: 7px;
+}
+
+.featured-products-list-item-content-description {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+}
+
+.featured-products-list-item-order-number {
+  margin: 0;
+}
+
+.featured-products-list-item-promo {
+  z-index: 1;
+
+  width: 510px;
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 19px;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.02em; 
+  color: #000000;
+}
+
+.featured-products-list-item-info {
+  width: 490px;
+  margin: 0;
+  margin-bottom: 43px;
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em; 
+  color: #464646;
+}
+
+.featured-products-list-item-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin-bottom: 50px;
+}
+
+.featured-products-list-item-factors {
+  display: flex;
+  order: 2;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.featured-products-list-item-factors li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.featured-products-list-item-factors strong {
+  margin-bottom: 7px;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.001em; 
+  color: #000000;
+}
+
+.list-item-factors-description {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.001em;
+  color: #464646;
+}
+
+.slider-button {
+  width: 220px;
+}
+
+.featured-products-list-slider-controls ul {  
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  min-height: 12px;
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-control {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px; 
+}
+
+.slider-control .slider-input  {
+  display: none;
+}
+
+.slider-control label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/index/slider-button-empty.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.slider-control .slider-input:checked + label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/index/slider-button-checked.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.featured-products-list-item-order-number {  
+  position: absolute;
+  top: -12px;
+  right: 48px;
+
+
+  display: block;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  letter-spacing: 0.001em;
+  text-align: right;
+  color: #ffffff;
+}
+
+.feature-number-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 1160px;
+  height: 115px;
+
+  background-color: #f7e296;
 }
