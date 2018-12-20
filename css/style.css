@@ -2042,7 +2042,7 @@ p.about-us-info-delivery-ad {
   position: relative;
 
   min-height: 308px;
-  margin-bottom: 110px;  
+  margin-bottom: 94px;  
 }
 
 .services::before {
@@ -2172,6 +2172,59 @@ p.about-us-info-delivery-ad {
   height: 40px;
 
   background-color: #000000;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 135px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.partners-list > li {
+  width: 260px;
+  margin-left: 2px;
+}
+
+.partners-list-link {
+  position: relative;  
+
+  display: block;
+}
+
+.dji-link:hover::before {
+  content: url("../img/index/dji-logo-hover.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sp-gadgets-link:hover::before {
+  content: url("../img/index/sp-gadgets-logo-hover.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.gopro-link:hover::before {
+  content: url("../img/index/gopro-logo-hover.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.vive-link:hover::before {
+  content: url("../img/index/vive-logo-hover.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0; 
 }
 
 .bottom-align {
