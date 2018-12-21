@@ -1451,8 +1451,8 @@ p.about-us-info-delivery-ad {
 }
 
 .products {
-  width: 760px;  
-  margin-bottom: 72px;
+  width: 760px;
+  margin-bottom: 65px;
   padding-top: 69px;
 }
 
@@ -2301,6 +2301,103 @@ p.about-us-info-delivery-ad {
 .filter .filter-price {
   margin-top: 81px;
   margin-bottom: 98px;
+}
+
+.products-pagination-list {
+  position: relative;
+  top: -12px;  
+
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  min-height: 70px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ebebeb;
+
+  list-style: none;
+}
+
+.products-pagination-item {  
+  width: 40px;
+  padding-top: 22px;
+
+  opacity: 0.3;
+}
+
+.pagination-item-current {
+  opacity: 1;
+}
+
+.products-pagination-item:nth-child(2) {
+  margin-left: 38px;
+}
+
+.products-pagination-item > a {
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+.pagination-back,
+.pagination-forward {
+  padding-top: 0;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  opacity: 1;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:active > .button-text {
+  opacity: 0.3;
+}
+
+.pagination-button {
+  height: 100%;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ebebeb;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.pagination-back {
+  width: 130px;
+  margin-right: auto;
+}
+
+.pagination-back-button {
+  width: 130px;
+}
+
+.pagination-forward {
+  width: 132px;
+  margin-left: auto;
+}
+
+.pagination-forward-button {
+  width: 132px;
 }
 
 .bottom-align {
