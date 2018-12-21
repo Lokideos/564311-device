@@ -331,13 +331,7 @@ input[type="radio"].visually-hidden {
   height: 142px;
 }
 
-.catalog-menu-popup-section:hover .catalog-menu-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog-menu-popup-background-wrapper:hover .catalog-menu-popup {
+.catalog-menu-popup-link:hover + .catalog-menu-popup-background-wrapper .catalog-menu-popup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,6 +993,8 @@ p.about-us-info-delivery-ad {
 
   background-image: linear-gradient(to bottom, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%);
   border: 0;
+
+  cursor: pointer;
 }
 
 .button:hover,
