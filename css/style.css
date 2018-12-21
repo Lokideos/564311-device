@@ -1099,7 +1099,7 @@ p.about-us-info-delivery-ad {
 }
 
 .filters fieldset:last-of-type {
-  margin-bottom: 38px;
+  margin-bottom: 31px;
 }
 
 .filters ul {
@@ -1214,14 +1214,7 @@ p.about-us-info-delivery-ad {
   margin-left: 60px;
 
   width: 200px;
-
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #eeeeee), color-stop(35%, #f0c52e), color-stop(65%, #f0c52e), color-stop(65%, #eeeeee));
-
-  background-image: -webkit-linear-gradient(top, #eeeeee 35%, #f0c52e 35%, #f0c52e 65%, #eeeeee 65%);
-
-  background-image: -o-linear-gradient(top, #eeeeee 35%, #f0c52e 35%, #f0c52e 65%, #eeeeee 65%);
-
-  background-image: linear-gradient(to bottom, #eeeeee 35%, #f0c52e 35%, #f0c52e 65%, #eeeeee 65%);
+  background-image: linear-gradient(to bottom, #eeeeee 40%, #f0c52e 40%, #f0c52e 60%, #eeeeee 60%);
 }
 
 .products ul {
@@ -2303,6 +2296,11 @@ p.about-us-info-delivery-ad {
 
 .sorting-type-rating {
   opacity: 0.3;
+}
+
+.filter .filter-price {
+  margin-top: 81px;
+  margin-bottom: 98px;
 }
 
 .bottom-align {
