@@ -2423,6 +2423,67 @@ p.about-us-info-delivery-ad {
   opacity: 0.3;
 }
 
+.sorting-up-down-filters-list {
+  display: flex;
+  justify-content: space-between;
+  width: 41px;
+  min-height: 18px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.sorting-button {  
+  position: relative;
+
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 11px;
+  margin-left: 1px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.sorting-button::before {
+  content: url("../img/catalog/icon-sort-up.svg");
+  opacity: 0.2;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sorting-down::before {
+  top: -1px;
+
+  margin-left: 2px;
+  
+  transform: rotate(180deg);
+}
+
+.sorting-button:hover::before,
+.sorting-button:focus::before {
+  opacity: 0.4;
+}
+
+.sorting-button:active::before {
+  opacity: 1;
+}
+
+.sorting-button.sorting-selected::before {
+  opacity: 1;
+}
+
 .filter .filter-price {
   margin-top: 81px;
   margin-bottom: 98px;
