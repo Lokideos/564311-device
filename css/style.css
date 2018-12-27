@@ -2413,14 +2413,21 @@ p.about-us-info-delivery-ad {
   line-height: 18px;
   letter-spacing: 0;
   color: #000000;
-}
 
-.sorting-type-type {
   opacity: 0.3;
 }
 
-.sorting-type-rating {
-  opacity: 0.3;
+.sorting-type:hover,
+.sorting-type:focus {
+  opacity: 0.6;
+}
+
+.sorting-type:active {
+  opacity: 1;
+}
+
+.sorting-type.sorting-selected {
+  opacity: 1;
 }
 
 .sorting-up-down-filters-list {
