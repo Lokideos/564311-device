@@ -1801,6 +1801,20 @@ p.about-us-info-delivery-ad {
   background-color: #ffffff;
 }
 
+.featured-products::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 1160px;
+  height: 115px;
+
+  background-color: #f7e296;
+}
+
 .featured-products-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2028,18 +2042,6 @@ p.about-us-info-delivery-ad {
   letter-spacing: 0.001em;
   text-align: right;
   color: #ffffff;
-}
-
-.feature-number-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 1160px;
-  height: 115px;
-
-  background-color: #f7e296;
 }
 
 .popular-categories-links {
