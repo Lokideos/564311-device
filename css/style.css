@@ -2525,7 +2525,16 @@ p.about-us-info-delivery-ad {
   opacity: 0.3;
 }
 
-.pagination-item-current {
+.products-pagination-item:hover,
+.products-pagination-item:focus {
+  opacity: 0.6;
+}
+
+.products-pagination-item:active {
+  opacity: 1;
+}
+
+.products-pagination-item.pagination-item-current {
   opacity: 1;
 }
 
