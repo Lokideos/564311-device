@@ -1504,7 +1504,7 @@ p.about-us-info-delivery-ad {
   left: 50%;
   z-index: 1;
 
-  display: none; 
+  display: none;
 
   -webkit-transform: translateX(-50%); 
 
@@ -2764,6 +2764,7 @@ p.about-us-info-delivery-ad {
   left: -17px;
 }
 
+
 .bottom-align {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -2771,4 +2772,42 @@ p.about-us-info-delivery-ad {
 
 .hiding-class {
   display: none;
+}
+
+#btn-services-delivery:checked ~ .services-links-list label[for="btn-services-delivery"],
+#btn-services-warranty:checked ~ .services-links-list label[for="btn-services-warranty"],
+#btn-services-credit:checked ~ .services-links-list label[for="btn-services-credit"] {
+  color: #f7e184;
+
+  background-color: #000000;
+  background-image: none;
+}
+
+#btn-services-delivery:checked ~ .services-links-list label[for="btn-services-delivery"]::before,
+#btn-services-warranty:checked ~ .services-links-list label[for="btn-services-warranty"]::before,
+#btn-services-credit:checked ~ .services-links-list label[for="btn-services-credit"]::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -118px;
+
+  width: 118px;
+  height: 40px;
+
+  background-color: #000000;
+}
+
+#btn-services-delivery:checked ~ .services-list .delivery-service,
+#btn-services-warranty:checked ~ .services-list .warranty-service,
+#btn-services-credit:checked ~ .services-list .credit-service {
+  display: block;
+}
+
+.services-input {
+  display: none;
+}
+
+.show-slider {
+  display: block;
 }

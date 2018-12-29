@@ -257,21 +257,35 @@
         <div class="content-container">
           <section class="services">
             <h2 class="visually-hidden">Сервисы</h2>
+
+            <input class="services-input"
+                   type="radio"
+                   name="services-control-button"
+                   id="btn-services-delivery"
+                   checked>
+            <input class="services-input"
+                   type="radio"
+                   name="services-control-button"
+                   id="btn-services-warranty">
+            <input class="services-input"
+                   type="radio"
+                   name="services-control-button"
+                   id="btn-services-credit">
             
             <ul class="services-links-list">
               <li>
-                <a class="button service-button delivery-button selected-button" href="/services?=delivery">Доставка</a>
+                <label class="button service-button delivery-button" for="btn-services-delivery" tabindex="0">Доставка</label>
               </li>
               <li>
-                <a class="button service-button warranty-button" href="/services?=warranty">Гарантия</a>
+                <label class="button service-button warranty-button" for="btn-services-warranty" tabindex="0">Гарантия</label>
               </li>
               <li>
-                <a class="button service-button credit-button" href="/services?=credit">Кредит</a>
+                <label class="button service-button credit-button" for="btn-services-credit" tabindex="0">Кредит</label>
               </li>
             </ul>
 
             <ul class="services-list">
-              <li>
+              <li class="delivery-service hiding-class">
                 <div class="service-description">
                   <div class="service-description-container">
                     <h3>Доставка</h3>
@@ -284,8 +298,8 @@
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="service-description hiding-class">
+              <li class="warranty-service hiding-class">
+                <div class="service-description">
                   <div class="service-description-container">
                     <h3>Гарантия</h3>
                     <p class="service-description-text">
@@ -297,8 +311,8 @@
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="service-description hiding-class">
+              <li class="credit-service hiding-class">
+                <div class="service-description">
                   <div class="service-description-container">
                     <h3>Кредит</h3>
                     <p class="service-description-text">
@@ -590,6 +604,6 @@
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть карту</span></button>
     </section>
 
-    <script src="js/script-min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
