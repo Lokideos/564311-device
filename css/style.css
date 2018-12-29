@@ -1503,6 +1503,7 @@ p.about-us-info-delivery-ad {
   position: fixed;
   top: 100px;
   left: 50%;
+  z-index: 1;
 
   display: none; 
 
