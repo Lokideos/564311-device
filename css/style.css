@@ -674,8 +674,6 @@ p.about-us-info-delivery-ad {
 
 .page-footer-authorization a,
 .page-footer-cart-operations a {
-  padding-left: 5px;
-
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
@@ -689,16 +687,37 @@ p.about-us-info-delivery-ad {
   padding-left: 0;
 }
 
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-footer-authorization .footer-login-link {
   position: relative;
   right: 0;
 
   margin-left: 0;
-  padding-left: 27px;
+}
+
+.footer-link .footer-link-description {
+  margin: 0;
+  padding-right: 0;
 }
 
 .footer-top-icon {
   fill: #ffc600;
+}
+
+.user-icon {
+  width: 26px;
+}
+
+.compare-icon {
+  width: 21px;
+}
+
+.cart-icon {
+  width: 23px;
 }
 
 .page-footer-cart-operations {
@@ -711,34 +730,9 @@ p.about-us-info-delivery-ad {
   width: 212px;
 }
 
-.page-footer-cart-operations .footer-compare-link {
-  position: relative;
-
-  padding-left: 21px;
-}
-
 .page-footer-cart-operations .footer-cart-link {
   position: relative;
-
-  padding-left: 24px;
-}
-
-.user-icon {
-  position: absolute;
-  top: 4px;
-  left: 1px;
-}
-
-.compare-icon {
-  position: absolute;
-  top: 6px;
-  left: 1px;
-}
-
-.cart-icon {
-  position: absolute;
-  top: 4px;
-  left: 2px;
+  right: -2px;
 }
 
 .page-footer-middle {
