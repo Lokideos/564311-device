@@ -1816,6 +1816,7 @@ p.about-us-info-delivery-ad {
   padding: 0;
 
   list-style: none;
+  counter-reset: product-number;
 }
 
 .featured-products-list-item {
@@ -1830,6 +1831,25 @@ p.about-us-info-delivery-ad {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.featured-products-list-item::before {
+  counter-increment: product-number;
+  content: "0" counter(product-number);
+
+  position: absolute;
+  top: -12px;
+  right: 48px;
+
+  display: block;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 179.2px;
+  line-height: 179.2px;  
+  letter-spacing: 0.001em;
+  text-align: right;
+  color: #ffffff;
 }
 
 .featured-products-list-item-content {
@@ -1863,10 +1883,6 @@ p.about-us-info-delivery-ad {
   width: 560px;
 }
 
-.featured-products-list-item-order-number {
-  margin: 0;
-}
-
 .featured-products-list-item-promo {
   z-index: 1;
 
@@ -1883,8 +1899,7 @@ p.about-us-info-delivery-ad {
   color: #000000;
 }
 
-.featured-products-list-item-info {
-  width: 490px;
+.featured-products-list-item-info {  width: 490px;
   margin: 0;
   margin-bottom: 43px;
 
@@ -2018,23 +2033,6 @@ p.about-us-info-delivery-ad {
   background-size: 100%;
 }
 
-.featured-products-list-item-order-number {  
-  position: absolute;
-  top: -12px;
-  right: 48px;
-
-
-  display: block;
-
-  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 179.2px;
-  line-height: 179.2px;
-  letter-spacing: 0.001em;
-  text-align: right;
-  color: #ffffff;
-}
-
 .popular-categories-links {
   margin-bottom: 161px;
 }
@@ -2109,14 +2107,16 @@ p.about-us-info-delivery-ad {
   left: 0;
 
   width: 100%;
-  min-height: 288px;
+  height: 93.5%;
 
   background-color: #e5e5e5
 }
 
 .services {
   position: relative;
-
+  
+  display: flex;
+  justify-content: flex-start;
   min-height: 308px;
   margin-bottom: 94px;  
 }
@@ -2135,19 +2135,27 @@ p.about-us-info-delivery-ad {
   background-color: #000000;
 }
 
-.services-background {  
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: -1;
-  
-  width: 100%;
-  min-height: 288px;
+.services-links-list {
+  width: 402px;
+  margin: 0;
+  padding: 0;
 
-  background-color: #e5e5e5; 
+  list-style: none;
+}
+
+.services-links-list > li {
+  margin-bottom: 24px;
+}
+
+.services-links-list > li:last-of-type {
+  margin: 0;
+  padding-top: 1px;
 }
 
 .services-list {
+  position: relative;
+  top: -7px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2158,6 +2166,8 @@ p.about-us-info-delivery-ad {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
+  width: 700px;
   min-height: 170px;
   margin: 0;
   padding: 0;
@@ -2165,11 +2175,7 @@ p.about-us-info-delivery-ad {
   list-style: none;
 }
 
-.service-description {
-  position: absolute;
-  top: -7px;
-  left: 403px;
-  
+.service-description {  
   display: -webkit-box;
   
   display: -ms-flexbox;

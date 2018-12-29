@@ -87,7 +87,6 @@
             <ul class="featured-products-list">
               <li class="featured-products-list-item">
                 <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
-                <p class="featured-products-list-item-order-number tempror" aria-label="Первый товар">01</p>
                 <div class="featured-products-list-item-content">
                   <div class="featured-products-list-image">
                     <img src="img/index/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
@@ -125,7 +124,6 @@
 
               <li class="featured-products-list-item hiding-class">
                 <h3 class="visually-hidden">Умные часы</h3>
-                <p class="featured-products-list-item-order-number" aria-label="Второй товар">02</p>
                 <div class="featured-products-list-item-content">
                   <div class="featured-products-list-image">
                     <img class="feture-products-list-image" src="img/index/slider-2.png" alt="Умные часы" width="345" height="485">
@@ -161,7 +159,6 @@
 
               <li class="featured-products-list-item hiding-class">
                 <h3 class="visually-hidden">Квадрокоптер</h3>
-                <p class="featured-products-list-item-order-number" aria-label="Третий товар">03</p>
                 <div class="featured-products-list-item-content">
                   <div class="featured-products-list-image">
                     <img class="feture-products-list-image" src="img/index/slider-3.png" alt="Квадрокоптер" width="526" height="334">
@@ -259,13 +256,22 @@
         <div class="content-container">
           <section class="services">
             <h2 class="visually-hidden">Сервисы</h2>
-
-            <div class="services-background"></div>
+            
+            <ul class="services-links-list">
+              <li>
+                <a class="button service-button delivery-button selected-button" href="/services?=delivery">Доставка</a>
+              </li>
+              <li>
+                <a class="button service-button warranty-button" href="/services?=warranty">Гарантия</a>
+              </li>
+              <li>
+                <a class="button service-button credit-button" href="/services?=credit">Кредит</a>
+              </li>
+            </ul>
 
             <ul class="services-list">
               <li>
-                <a class="button service-button delivery-button selected-button" href="/services?=delivery">Доставка</a>
-                <div class="service-description hiding-class">
+                <div class="service-description">
                   <div class="service-description-container">
                     <h3>Доставка</h3>
                     <p class="service-description-text">
@@ -278,7 +284,6 @@
                 </div>
               </li>
               <li>
-                <a class="button service-button warranty-button" href="/services?=warranty">Гарантия</a>
                 <div class="service-description hiding-class">
                   <div class="service-description-container">
                     <h3>Гарантия</h3>
@@ -292,8 +297,7 @@
                 </div>
               </li>
               <li>
-                <a class="button service-button credit-button" href="/services?=credit">Кредит</a>
-                <div class="service-description">
+                <div class="service-description hiding-class">
                   <div class="service-description-container">
                     <h3>Кредит</h3>
                     <p class="service-description-text">
