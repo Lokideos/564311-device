@@ -1601,6 +1601,11 @@ p.about-us-info-delivery-ad {
   outline: #f7e296 solid 3px;
 }
 
+.contact-us-form .contact-us-input-element:invalid {
+  background-color: #f6dada;
+  opacity: 0.5;
+}
+
 .contact-us-text {
   resize: none;
 }
