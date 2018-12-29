@@ -308,7 +308,8 @@ input[type="radio"].visually-hidden {
   top: 30px;
   left: -60px;
   z-index: 2;
-
+  
+  display: none;
   width: 1038px;  
   padding: 0 61px;
   padding-top: 16px;
@@ -330,7 +331,11 @@ input[type="radio"].visually-hidden {
   height: 142px;
 }
 
-.catalog-menu-popup-section:hover > .catalog-menu-popup-background-wrapper .catalog-menu-popup {
+.catalog-menu-popup-section:hover > .catalog-menu-popup-background-wrapper {
+  display: block;
+}
+
+.catalog-menu-popup-section:hover .catalog-menu-popup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
