@@ -1991,11 +1991,11 @@ p.about-us-info-delivery-ad {
   padding-left: 14px; 
 }
 
-.slider-control .slider-input  {
+.featured-products .slider-input  {
   display: none;
 }
 
-.slider-control label::before {
+.slider-label::before {
   content: "";
 
   position: absolute;
@@ -2010,7 +2010,9 @@ p.about-us-info-delivery-ad {
 
 }
 
-.slider-control .slider-input:checked + label::before {
+#btn-slider-1:checked ~ .featured-products-slider label[for="btn-slider-1"]::before,
+#btn-slider-2:checked ~ .featured-products-slider label[for="btn-slider-2"]::before,
+#btn-slider-3:checked ~ .featured-products-slider label[for="btn-slider-3"]::before {
   content: "";
 
   position: absolute;
