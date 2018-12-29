@@ -1620,9 +1620,11 @@ p.about-us-info-delivery-ad {
   opacity: 0.3;
 }
 
-.modal-map {  
+.modal-map {
   width: 960px;
   height: 559px;
+
+  overflow: hidden;
 }
 
 .modal-map img {
@@ -1636,9 +1638,6 @@ p.about-us-info-delivery-ad {
 }
 
 .modal-map a {
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 1;
 }
 
