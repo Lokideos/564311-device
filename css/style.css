@@ -1109,10 +1109,6 @@ p.about-us-info-delivery-ad {
   padding: 0;
 }
 
-.filters .filter-color {
-  margin-top: 40px;
-}
-
 .filters legend {
   position: relative;
 
@@ -2512,11 +2508,6 @@ p.about-us-info-delivery-ad {
   opacity: 1;
 }
 
-.filter .filter-price {
-  margin-top: 81px;
-  margin-bottom: 98px;
-}
-
 .products-pagination-list {
   position: relative;
   top: -12px;  
@@ -2627,6 +2618,92 @@ p.about-us-info-delivery-ad {
 
 .pagination-forward-button {
   width: 132px;
+}
+
+.filter .filter-price {
+  margin-top: 81px;
+  margin-bottom: 31px;
+}
+
+.filter-price-scroll {
+  width: 210px;
+  min-height: 50px;
+  margin-top: 7px;
+}
+
+.filter-price-scroll-controls {
+  position: relative;  
+  
+  min-height: 50px;
+  padding-top: 10px;
+}
+
+.filter-price-scroll-controls .scale {
+  width: 200px;
+  height: 2px;
+
+  background-color: #dbdbdb;
+}
+
+.filter-price-scroll-controls .bar {
+  width: 125px;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.fitler-set-price-container {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: 1;
+}
+
+.max-price-container {
+  left: 108px;
+}
+
+.toggle {
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px -3px #000000;
+
+  cursor: pointer;
+}
+
+.toggle:active {
+  width: 5px;
+  height: 5px;
+
+  border: 8px solid #ffffff;
+}
+
+.fitler-set-price-container .price-view {  
+  margin: 0;  
+  padding: 0;
+  padding-top: 1px;
+
+  font-family: 'Gilroy', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #000000;
+
+  opacity: 0.2;
+}
+
+.min-price-container .price-view {
+  padding-left: 5px;
+}
+
+.max-price-container .price-view {
+  position: relative;
+  left: -17px;
 }
 
 .bottom-align {
