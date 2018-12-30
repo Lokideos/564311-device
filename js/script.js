@@ -19,6 +19,32 @@ var promoFirstSliderSelectors = document.querySelectorAll(".slider-label-1");
 var promoSecondSliderSelectors = document.querySelectorAll(".slider-label-2");
 var promoThirdSliderSelectors = document.querySelectorAll(".slider-label-3");
 
+var serviceSliders = document.querySelectorAll(".services-list-item")
+var hiddenServiceSliders = document.querySelectorAll(".truly-hidden");
+var serviceSlidersControls = document.querySelectorAll(".service-button");
+
+for (var i = 0; i < serviceSliders.length; i++) {
+  serviceSliders[i].classList.remove("hiding-class");
+}
+
+for (var i = 0; i < hiddenServiceSliders.length; i++) {
+  hiddenServiceSliders[i].classList.remove("truly-hidden");
+  hiddenServiceSliders[i].classList.add("visually-hidden");
+}
+
+var addServiceSelectorClickHandler = function(sliderSelector, sliders, selectedSlider) {
+  sliderSelector.addEventListener("click", function () {
+    for (var i = 0; i < sliders.length; i ++) {
+      sliders[i].classList.add("visually-hidden");
+    }
+    selectedSlider.classList.remove("visually-hidden");
+  })
+}
+
+for (var i = 0; i < serviceSlidersControls.length; i++) {
+  addServiceSelectorClickHandler(serviceSlidersControls[i], serviceSliders, serviceSliders[i]);
+}
+
 var addSelectorClickHandler = function(sliderSelector, sliders, selectedSlider) {
   sliderSelector.addEventListener("click", function () {    
     for (var i = 0; i < sliders.length; i++) {

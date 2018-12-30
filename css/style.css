@@ -2316,26 +2316,6 @@ p.about-us-info-delivery-ad {
   background-color: #000000;
 }
 
-.service-button.selected-button {
-  color: #f7e184;
-
-  background-color: #000000;
-  background-image: none;
-}
-
-.service-button.selected-button::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: -118px;
-
-  width: 118px;
-  height: 40px;
-
-  background-color: #000000;
-}
-
 .partners-list {
   display: -webkit-box;
   display: -ms-flexbox;
