@@ -2050,6 +2050,14 @@ p.about-us-info-delivery-ad {
 
 }
 
+.slider-label:hover::before,
+.slider-label:focus::before {
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 #btn-slider-1:checked ~ .featured-products-slider label[for="btn-slider-1"]::before,
 #btn-slider-2:checked ~ .featured-products-slider label[for="btn-slider-2"]::before,
 #btn-slider-3:checked ~ .featured-products-slider label[for="btn-slider-3"]::before {
@@ -2343,7 +2351,8 @@ p.about-us-info-delivery-ad {
   display: block;
 }
 
-.dji-link:hover::before {
+.dji-link:hover::before,
+.dji-link:focus::before {
   content: url("../img/index/dji-logo-hover.jpg");
 
   position: absolute;
@@ -2351,7 +2360,8 @@ p.about-us-info-delivery-ad {
   left: 0;
 }
 
-.sp-gadgets-link:hover::before {
+.sp-gadgets-link:hover::before,
+.sp-gadgets-link:focus::before {
   content: url("../img/index/sp-gadgets-logo-hover.jpg");
 
   position: absolute;
@@ -2359,7 +2369,8 @@ p.about-us-info-delivery-ad {
   left: 0; 
 }
 
-.gopro-link:hover::before {
+.gopro-link:hover::before,
+.gopro-link:focus::before {
   content: url("../img/index/gopro-logo-hover.jpg");
 
   position: absolute;
