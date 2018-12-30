@@ -13,6 +13,34 @@ var contactName = popupContactUs.querySelector(".contact-us-name");
 var contactEmail = popupContactUs.querySelector(".contact-us-email");
 var contactText = popupContactUs.querySelector(".contact-us-text");
 
+var promoSliders = document.querySelectorAll(".featured-products-list-item");
+var promoSlidersControls = document.querySelectorAll(".slider-input");
+var promoFirstSliderSelectors = document.querySelectorAll(".slider-label-1");
+var promoSecondSliderSelectors = document.querySelectorAll(".slider-label-2");
+var promoThirdSliderSelectors = document.querySelectorAll(".slider-label-3");
+
+var addSelectorClickHandler = function(sliderSelector, sliders, selectedSlider) {
+  sliderSelector.addEventListener("click", function () {    
+    for (var i = 0; i < sliders.length; i++) {
+      sliders[i].classList.add("visually-hidden");
+    }
+    selectedSlider.classList.remove("visually-hidden");
+  })
+}
+
+
+for (var i = 0; i < promoFirstSliderSelectors.length; i++) {
+  addSelectorClickHandler(promoFirstSliderSelectors[i], promoSliders, promoSliders[0]);
+}
+
+for (var i = 0; i < promoSecondSliderSelectors.length; i++) {
+  addSelectorClickHandler(promoSecondSliderSelectors[i], promoSliders, promoSliders[1]);
+}
+
+for (var i = 0; i < promoThirdSliderSelectors.length; i++) {
+  addSelectorClickHandler(promoThirdSliderSelectors[i], promoSliders, promoSliders[2]);
+}
+
 linkContactUs.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupContactUs.classList.add("modal-show");
