@@ -1860,6 +1860,7 @@ p.about-us-info-delivery-ad {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 499px;
 }
 
 .featured-products-list-item::before {
